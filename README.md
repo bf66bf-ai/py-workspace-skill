@@ -12,6 +12,14 @@ cd ~/.claude/skills && git clone https://github.com/pinyin/py-workspace-skill.gi
 
 **任何 Agent 窗口都可以使用。** 安装后在项目目录输入 `/py-workspace init` 即可开始。
 
+### 如何更新到最新版本？
+
+```bash
+cd ~/.claude/skills/py-workspace && git pull
+```
+
+详见 [UPDATE_GUIDE.md](UPDATE_GUIDE.md) 完整更新指南。
+
 ## 为什么需要这个 skill？
 
 如果你是咨询顾问、培训师、设计师或内容创作者，可能遇到过：

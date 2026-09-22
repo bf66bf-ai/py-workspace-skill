@@ -59,6 +59,14 @@ git clone https://github.com/pinyin/py-workspace-skill.git py-workspace
 
 安装后，在任何项目目录调用 `/py-workspace` 即可开始。
 
+### 更新到最新版本
+
+```bash
+cd ~/.claude/skills/py-workspace && git pull
+```
+
+详见项目根目录的 `UPDATE_GUIDE.md`。
+
 ---
 
 ## 使用方法
