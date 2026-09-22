@@ -11,28 +11,28 @@
 在发布前，需要替换以下文件中的占位符：
 
 ### README.md
-- `你的用户名` → 你的 GitHub 用户名
-- `你的邮箱` → 你的联系邮箱
-- `@你的账号` → 你的 Twitter/X 账号（可选）
+- `pinyin` → 你的 GitHub 用户名
+- `pinyin@example.com` → 你的联系邮箱
+- `@pinyin` → 你的 Twitter/X 账号（可选）
 
 ### QUICKSTART.md
-- `你的用户名` → 你的 GitHub 用户名
+- `pinyin` → 你的 GitHub 用户名
 
 ### CHANGELOG.md
-- `你的用户名` → 你的 GitHub 用户名
+- `pinyin` → 你的 GitHub 用户名
 
 ### LICENSE
 - `[你的名字/组织名称]` → 你的真实姓名或组织名称
 
 ### .github-release-template.md
-- `你的用户名` → 你的 GitHub 用户名
+- `pinyin` → 你的 GitHub 用户名
 
 ## 发布步骤
 
 ### 1. 在 GitHub 创建仓库
 
 ```
-仓库名称: workspace-manager-skill
+仓库名称: py-workspace-skill
 描述: Claude Code skill for workspace management - designed for service-based entrepreneurs
 可见性: Public
 不要初始化 README（我们已经有了）
@@ -41,10 +41,10 @@
 ### 2. 推送代码到 GitHub
 
 ```bash
-cd "/e/桌面/拼音的Codex工作区/tmp/workspace-manager-skill"
+cd "/e/桌面/拼音的Codex工作区/tmp/py-workspace-skill"
 
-# 添加远程仓库（替换为你的用户名）
-git remote add origin https://github.com/你的用户名/workspace-manager-skill.git
+# 添加远程仓库（替换为pinyin）
+git remote add origin https://github.com/pinyin/py-workspace-skill.git
 
 # 推送代码
 git branch -M main
@@ -67,22 +67,22 @@ git push -u origin main
 ```bash
 # 在另一个目录测试安装
 cd ~/.claude/skills
-git clone https://github.com/你的用户名/workspace-manager-skill.git workspace-manager
+git clone https://github.com/pinyin/py-workspace-skill.git py-workspace
 
 # 验证文件
-ls -la workspace-manager/
-cat workspace-manager/SKILL.md | head -10
+ls -la py-workspace/
+cat py-workspace/SKILL.md | head -10
 ```
 
 ### 5. 测试功能
 
 ```bash
 # 创建测试项目
-mkdir ~/test-workspace-manager
-cd ~/test-workspace-manager
+mkdir ~/test-py-workspace
+cd ~/test-py-workspace
 
 # 测试初始化
-/workspace-manager init
+/py-workspace init
 
 # 验证创建的文件
 ls -la
@@ -104,7 +104,7 @@ cat SOURCE_OF_TRUTH.md
 
 5分钟建立科学的工作区管理体系 💪
 
-GitHub: https://github.com/你的用户名/workspace-manager-skill
+GitHub: https://github.com/pinyin/py-workspace-skill
 
 #ClaudeCode #AI #Productivity
 ```
@@ -128,12 +128,12 @@ Many service providers struggle with organizing client projects, course material
 **Try it:**
 ```bash
 cd ~/.claude/skills
-git clone https://github.com/你的用户名/workspace-manager-skill.git workspace-manager
+git clone https://github.com/pinyin/py-workspace-skill.git py-workspace
 ```
 
 Feedback welcome! 🙏
 
-GitHub: https://github.com/你的用户名/workspace-manager-skill
+GitHub: https://github.com/pinyin/py-workspace-skill
 ```
 
 ### 博客文章大纲

@@ -8,7 +8,7 @@ Workspace Manager Skill v1.0 已经完成开发，可以发布到 GitHub。
 
 ### 文件结构
 ```
-workspace-manager-skill/
+py-workspace-skill/
 ├── SKILL.md (586 行)              # 核心实现文件
 ├── README.md (260 行)             # 用户文档
 ├── QUICKSTART.md (113 行)         # 5分钟快速开始
@@ -36,13 +36,13 @@ workspace-manager-skill/
 
 ## 核心功能
 
-### 1. 初始化工作区 (`/workspace-manager init`)
+### 1. 初始化工作区 (`/py-workspace init`)
 - 创建三层管理体系（导航、规则、工作层）
 - 自动创建固定目录（工作记录/、文件上传区/、文件下载区/）
 - 生成模板文件（SOURCE_OF_TRUTH.md、AGENTS.md）
 - 创建今日工作记录
 
-### 2. 智能文件分类 (`/workspace-manager organize`)
+### 2. 智能文件分类 (`/py-workspace organize`)
 - **识别用户预分类**：保留用户习惯的文件夹名称
 - **内容识别**：分析文件名、扩展名和内容
 - **协商确认**：与用户对话确定最终分类
@@ -104,7 +104,7 @@ workspace-manager-skill/
 ### Claude Code 集成
 ```yaml
 ---
-name: workspace-manager
+name: py-workspace
 description: 为服务类创业者初始化科学工作区管理体系
 when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工作区文件"
 ---
@@ -128,12 +128,12 @@ when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工�
 | openclaw-workspace | 多种工作区文件（SOUL.md、TOOLS.md） | 面向开发者，不适合非技术用户 |
 | claude-code-studio | 多工作区、SSH 支持 | 配置复杂，学习成本高 |
 | claude-workspace | 强制一致性 | 固定结构，不灵活 |
-| **workspace-manager** | **对话式、灵活、服务类生意** | 功能相对简单（但这是优势） |
+| **py-workspace** | **对话式、灵活、服务类生意** | 功能相对简单（但这是优势） |
 
 ## 后续计划
 
 ### v1.1（规划中）
-- [ ] `/workspace-manager status` 查看当前状态
+- [ ] `/py-workspace status` 查看当前状态
 - [ ] 支持自定义模板
 - [ ] 客户项目模板生成器
 
@@ -153,7 +153,7 @@ when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工�
 - ✅ Git 仓库初始化
 - ✅ 所有文件已提交
 - ✅ Co-Author 署名
-- ⬜ 替换 README.md 中的占位符（你的用户名、邮箱、Twitter）
+- ⬜ 替换 README.md 中的占位符（pinyin、邮箱、Twitter）
 - ⬜ 创建 GitHub 仓库
 - ⬜ 推送代码
 - ⬜ 创建 v1.0.0 Release
@@ -170,13 +170,13 @@ when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工�
 ```bash
 # 用户安装
 cd ~/.claude/skills
-git clone https://github.com/你的用户名/workspace-manager-skill.git workspace-manager
+git clone https://github.com/pinyin/py-workspace-skill.git py-workspace
 
 # 使用
 cd ~/你的工作目录
-/workspace-manager init
+/py-workspace init
 # 放入资料到文件上传区
-/workspace-manager organize
+/py-workspace organize
 ```
 
 ## 许可证

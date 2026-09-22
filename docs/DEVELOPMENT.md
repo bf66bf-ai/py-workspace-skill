@@ -3,7 +3,7 @@
 ## 项目结构
 
 ```
-workspace-manager-skill/
+py-workspace-skill/
 ├── SKILL.md                           # 主 skill 文件（Claude Code 读取）
 ├── README.md                          # 用户文档
 ├── LICENSE                            # MIT 许可证
@@ -261,7 +261,7 @@ def negotiate_rules():
 
 ```yaml
 ---
-name: workspace-manager
+name: py-workspace
 description: 为服务类创业者初始化科学工作区管理体系
 when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工作区文件"
 ---
@@ -277,9 +277,9 @@ when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工�
 用户输入以下任一命令时，Claude 会读取 SKILL.md：
 
 ```bash
-/workspace-manager init
-/workspace-manager organize
-/workspace-manager  # 显示帮助
+/py-workspace init
+/py-workspace organize
+/py-workspace  # 显示帮助
 ```
 
 ## 测试策略
@@ -310,9 +310,9 @@ when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工�
 
 1. **完整工作流**
    ```bash
-   /workspace-manager init
+   /py-workspace init
    # 用户放入文件
-   /workspace-manager organize
+   /py-workspace organize
    # 检查结果
    ```
 
@@ -343,21 +343,21 @@ when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工�
 
 ```bash
 # 复制到 skills 目录
-cp -r workspace-manager-skill ~/.claude/skills/workspace-manager
+cp -r py-workspace-skill ~/.claude/skills/py-workspace
 
 # 在测试项目中调用
 cd ~/test-project
-/workspace-manager init
+/py-workspace init
 ```
 
 ### 2. 创建 GitHub 仓库
 
 ```bash
-cd workspace-manager-skill
+cd py-workspace-skill
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/你的用户名/workspace-manager-skill.git
+git remote add origin https://github.com/pinyin/py-workspace-skill.git
 git push -u origin main
 ```
 
@@ -411,7 +411,7 @@ A:
 ### v1.1（计划中）
 
 - [ ] 支持自定义模板
-- [ ] 添加 `/workspace-manager status` 查看当前状态
+- [ ] 添加 `/py-workspace status` 查看当前状态
 - [ ] 支持批量重命名文件
 
 ### v1.2（计划中）

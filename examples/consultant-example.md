@@ -1,6 +1,6 @@
 # 示例：咨询顾问的工作区
 
-这是一个为咨询顾问设计的工作区示例，展示如何使用 workspace-manager skill。
+这是一个为咨询顾问设计的工作区示例，展示如何使用 py-workspace skill。
 
 ## 背景
 
@@ -14,7 +14,7 @@
 ### Step 1: 运行初始化命令
 
 ```bash
-/workspace-manager init
+/py-workspace init
 ```
 
 **结果**：
@@ -60,7 +60,7 @@
 ### Step 3: 运行整理命令
 
 ```bash
-/workspace-manager organize
+/py-workspace organize
 ```
 
 **对话过程**：
@@ -321,7 +321,7 @@
 
 ## 总结
 
-通过 workspace-manager skill，王老师：
+通过 py-workspace skill，王老师：
 
 1. ✅ **一次配置，长期受益**：只需初始化一次，后续新资料自动归档
 2. ✅ **保持习惯**：Agent 保留了"客户项目"、"课程资料"等原有分类

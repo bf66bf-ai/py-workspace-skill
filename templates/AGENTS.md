@@ -6,7 +6,7 @@
 
 - 处理业务任务前，先读取 `SOURCE_OF_TRUTH.md` 确定资料位置
 - 需要了解业务背景时，按以下优先级读取：
-  <!-- 这个优先级会在 /workspace-manager organize 后根据用户确认填充 -->
+  <!-- 这个优先级会在 /py-workspace organize 后根据用户确认填充 -->
   1. 待用户确认的分类优先级
 - 引用涉及客户隐私的资料前，先确认是否可以使用
 - 找不到资料时询问用户，不自行假设或编造内容
@@ -33,8 +33,8 @@
 
 ## 引用规则
 
-<!-- 在 /workspace-manager organize 后与用户协商确定 -->
+<!-- 在 /py-workspace organize 后与用户协商确定 -->
 
 ## 版本管理
 
-<!-- 在 /workspace-manager organize 后与用户协商确定 -->
+<!-- 在 /py-workspace organize 后与用户协商确定 -->

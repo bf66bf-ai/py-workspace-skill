@@ -1,33 +1,59 @@
-# Workspace Manager Skill
+# py-workspace - 工作区管理系统
 
-为服务类创业者设计的 Claude Code 工作区管理系统。
+为服务类创业者设计的 Claude Code 工作区管理系统。**新手友好，全程引导。**
 
-## 快速开始
+作者：[pinyin](https://github.com/pinyin)
 
-### 安装
-
-```bash
-# 方法 1：从 GitHub 克隆到 Claude Code skills 目录
-cd ~/.claude/skills
-git clone https://github.com/你的用户名/workspace-manager-skill.git
-
-# 方法 2：手动下载
-# 1. 下载本仓库
-# 2. 将文件夹放入 ~/.claude/skills/workspace-manager/
-# 3. 确保 SKILL.md 文件存在
-```
-
-### 使用
-
-在任意 Claude Code 窗口中：
+## 一行安装
 
 ```bash
-# 初始化工作区
-/workspace-manager init
-
-# 整理业务资料
-/workspace-manager organize
+cd ~/.claude/skills && git clone https://github.com/pinyin/py-workspace-skill.git py-workspace
 ```
+
+**任何 Agent 窗口都可以使用。** 安装后在项目目录输入 `/py-workspace init` 即可开始。
+
+## 为什么需要这个 skill？
+
+如果你是咨询顾问、培训师、设计师或内容创作者，可能遇到过：
+
+- ❌ 客户文档、课程资料、营销素材散落各处
+- ❌ AI 助手不知道你的资料在哪，每次都要重新解释
+- ❌ 新开一个窗口，之前的工作进展又要重新说一遍
+- ❌ 文件到处复制，最后不知道哪个是最新版
+
+**py-workspace 帮你解决这些问题。**
+
+## 特色功能
+
+### 🎯 新手友好
+
+**首次使用自动启动引导模式**，每完成一步就告诉你下一步该做什么：
+
+```
+✅ 工作区初始化完成
+
+📍 你现在在：步骤 1/3 - 工作区已初始化
+
+⏭️ 下一步：放入业务资料
+
+请将你的业务资料放入「文件上传区/」文件夹...
+
+📝 准备好后，输入这个命令：
+/py-workspace organize
+```
+
+不需要看文档，跟着提示走就行。
+
+### 🌍 全局可用
+
+**在任何 Agent 窗口都能调用**，不限于特定项目或账号。
+
+### ✨ 其他核心功能
+
+- **智能分类**：识别你的分类习惯，自动归档文件
+- **自动索引**：生成导航文件，AI 知道资料在哪
+- **工作记录**：按日期记录产出，跨窗口续接
+- **安全备份**：独立的交付物备份区
 
 ## 功能特性
 
@@ -93,7 +119,7 @@ git clone https://github.com/你的用户名/workspace-manager-skill.git
 
 ```bash
 # 1. 初始化
-/workspace-manager init
+/py-workspace init
 
 # 2. 放入资料
 # 将业务资料放入「文件上传区/」
@@ -102,7 +128,7 @@ git clone https://github.com/你的用户名/workspace-manager-skill.git
 #   文件上传区/课程资料/
 
 # 3. 整理归档
-/workspace-manager organize
+/py-workspace organize
 
 # Agent 会：
 # - 识别你的分类习惯
@@ -116,7 +142,7 @@ git clone https://github.com/你的用户名/workspace-manager-skill.git
 
 ```bash
 # 1. 放入文件上传区
-# 2. 运行 /workspace-manager organize
+# 2. 运行 /py-workspace organize
 # Agent 会自动识别并归档
 ```
 
@@ -251,9 +277,9 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ## 联系方式
 
-- GitHub Issues: [提交问题](https://github.com/你的用户名/workspace-manager-skill/issues)
-- Email: 你的邮箱
-- Twitter: @你的账号
+- GitHub Issues: [提交问题](https://github.com/pinyin/py-workspace-skill/issues)
+- Email: pinyin@example.com
+- Twitter: @pinyin
 
 ---
 

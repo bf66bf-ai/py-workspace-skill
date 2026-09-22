@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2026-09-23
 
 ### Added
-- **One-command initialization**: `/workspace-manager init` creates complete workspace structure
+- **One-command initialization**: `/py-workspace init` creates complete workspace structure
 - **Smart file classification**: Recognizes user habits and identifies content automatically
 - **Auto-generated navigation**: SOURCE_OF_TRUTH.md with quick-find table and directory responsibilities
 - **Auto-generated rules**: AGENTS.md with read protocols and version conflict handling
@@ -38,4 +38,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Course creator organizing teaching materials
 - Service providers with mixed content types
 
-[1.0.0]: https://github.com/你的用户名/workspace-manager-skill/releases/tag/v1.0.0
+[1.0.0]: https://github.com/pinyin/py-workspace-skill/releases/tag/v1.0.0
