@@ -397,8 +397,6 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 ## 联系方式
 
 - GitHub Issues: [提交问题](https://github.com/pinyin/py-workspace-skill/issues)
-- Email: pinyin@example.com
-- Twitter: @pinyin
 
 ---
 
