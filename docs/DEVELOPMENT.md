@@ -12,7 +12,7 @@ py-workspace-skill/
 │   ├── SOURCE_OF_TRUTH.md            # 导航文件模板
 │   └── AGENTS.md                     # 规则文件模板
 ├── examples/                          # 使用示例
-│   └── consultant-example.md         # 咨询顾问案例
+│   └── consultant-example.md         # 完整示例
 └── docs/                              # 开发文档
     └── DEVELOPMENT.md                # 本文件
 ```
@@ -21,12 +21,12 @@ py-workspace-skill/
 
 ### 1. 对话式引导 > 固定模板
 
-不预设用户的业务分类，而是通过识别用户习惯动态创建。
+不预设用户的分类，而是通过识别用户习惯动态创建。
 
 **错误做法**：
 ```
 创建固定结构：
-├── 客户/
+├── 项目资料/
 ├── 产品/
 └── 营销/
 ```
@@ -34,8 +34,8 @@ py-workspace-skill/
 **正确做法**：
 ```
 用户放入：
-文件上传区/客户项目/  → 创建：客户项目/
-文件上传区/课程资料/  → 创建：课程资料/
+文件上传区/项目资料/  → 创建：项目资料/
+文件上传区/参考资料/  → 创建：参考资料/
 ```
 
 ### 2. 移动而非复制
@@ -161,11 +161,11 @@ def identify_content(file):
     # 2. 文件名关键词
     keywords = extract_keywords(file.name)
     if any(k in keywords for k in ["合同", "需求", "交付"]):
-        return "客户项目"
-    if any(k in keywords for k in ["课程", "大纲", "教学"]):
-        return "课程资料"
+        return "项目资料"
+    if any(k in keywords for k in ["笔记", "大纲", "讲义"]):
+        return "参考资料"
     if any(k in keywords for k in ["文案", "脚本", "海报"]):
-        return "营销素材"
+        return "创作素材"
     
     # 3. 文本文件读取内容
     if ext in [".md", ".txt", ".docx", ".pdf"]:
@@ -180,9 +180,9 @@ def explain_reason(file, category):
     """
     生成分类理由说明
     """
-    if category == "客户项目":
+    if category == "项目资料":
         return "包含合同、报价、交付等关键词"
-    elif category == "课程资料":
+    elif category == "参考资料":
         return "包含章节结构和知识点"
     # ...
     else:
@@ -262,7 +262,7 @@ def negotiate_rules():
 ```yaml
 ---
 name: py-workspace
-description: 为服务类创业者初始化科学工作区管理体系
+description: 为任何知识工作场景初始化可被 AI 接手的工作区管理体系
 when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工作区文件"
 ---
 ```
@@ -332,10 +332,10 @@ when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工�
 
 ### 用户测试清单
 
-- [ ] 咨询顾问场景
-- [ ] 培训师场景
-- [ ] 设计师场景
-- [ ] 内容创作者场景
+- [ ] 个人项目场景
+- [ ] 学习研究场景
+- [ ] 内容创作场景
+- [ ] 团队协作场景
 
 ## 发布流程
 
@@ -417,7 +417,7 @@ A:
 ### v1.2（计划中）
 
 - [ ] 集成飞书/钉钉日历同步
-- [ ] 支持项目模板（客户项目/课程项目）
+- [ ] 支持项目模板（项目资料/课程项目）
 - [ ] 工作记录可视化统计
 
 ### v2.0（规划中）

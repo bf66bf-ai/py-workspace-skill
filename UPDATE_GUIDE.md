@@ -61,7 +61,7 @@ git clone https://github.com/bf66bf-ai/py-workspace-skill.git py-workspace
 | ✅ `SKILL.md`、模板文件 | ✅ 你已经创建的 `SOURCE_OF_TRUTH.md` |
 | ✅ 新功能、新命令 | ✅ 你已经创建的 `AGENTS.md` |
 | | ✅ 你的工作记录 |
-| | ✅ 你的业务资料 |
+| | ✅ 你的资料 |
 
 **原因**：
 
