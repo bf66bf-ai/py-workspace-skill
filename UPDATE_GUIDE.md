@@ -44,7 +44,7 @@ rm -rf ~/.claude/skills/py-workspace
 
 # 3. 重新安装
 cd ~/.claude/skills
-git clone https://github.com/pinyin/py-workspace-skill.git py-workspace
+git clone https://github.com/bf66bf-ai/py-workspace-skill.git py-workspace
 ```
 
 ---
@@ -150,7 +150,7 @@ cd ~/.claude/skills/py-workspace
 git log --oneline
 ```
 
-或访问 GitHub：https://github.com/pinyin/py-workspace-skill/commits/main
+或访问 GitHub：https://github.com/bf66bf-ai/py-workspace-skill/commits/main
 
 ---
 
@@ -170,7 +170,7 @@ git status
 
 ### 方法 2：订阅 GitHub（推荐）
 
-1. 访问 https://github.com/pinyin/py-workspace-skill
+1. 访问 https://github.com/bf66bf-ai/py-workspace-skill
 2. 点击右上角 `Watch` → `Custom` → `Releases`
 3. 每次发布新版本会收到邮件通知
 
@@ -212,7 +212,7 @@ mv ~/.claude/skills/py-workspace-skill ~/.claude/skills/py-workspace
 3. 手动调整你的文件
 
 **如果实在无法解决**：
-- 提交 Issue：https://github.com/pinyin/py-workspace-skill/issues
+- 提交 Issue：https://github.com/bf66bf-ai/py-workspace-skill/issues
 - 附上错误信息和你的 `AGENTS.md`、`SOURCE_OF_TRUTH.md` 内容
 
 ---
@@ -248,6 +248,6 @@ mv ~/.claude/skills/py-workspace-skill ~/.claude/skills/py-workspace
 
 ## 💬 需要帮助？
 
-- GitHub Issues：https://github.com/pinyin/py-workspace-skill/issues
-- 讨论区：https://github.com/pinyin/py-workspace-skill/discussions
+- GitHub Issues：https://github.com/bf66bf-ai/py-workspace-skill/issues
+- 讨论区：https://github.com/bf66bf-ai/py-workspace-skill/discussions
 - Email：你的邮箱（如果有）

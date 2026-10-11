@@ -2,13 +2,13 @@
 
 **新手友好版：只需记住一个命令，后续全程引导。**
 
-作者：[pinyin](https://github.com/pinyin)
+作者：[bf66bf-ai](https://github.com/bf66bf-ai)
 
 ## 一键安装（30 秒）
 
 ```bash
 cd ~/.claude/skills
-git clone https://github.com/pinyin/py-workspace-skill.git py-workspace
+git clone https://github.com/bf66bf-ai/py-workspace-skill.git py-workspace
 ```
 
 **任何 Agent 窗口都可以使用。**
@@ -164,5 +164,5 @@ Agent：[读取 SOURCE_OF_TRUTH.md]
 
 ## 需要帮助？
 
-- [提交 Issue](https://github.com/pinyin/py-workspace-skill/issues)
+- [提交 Issue](https://github.com/bf66bf-ai/py-workspace-skill/issues)
 - [查看 FAQ](README.md#常见问题)

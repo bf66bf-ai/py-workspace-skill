@@ -38,4 +38,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Course creator organizing teaching materials
 - Service providers with mixed content types
 
-[1.0.0]: https://github.com/pinyin/py-workspace-skill/releases/tag/v1.0.0
+[1.0.0]: https://github.com/bf66bf-ai/py-workspace-skill/releases/tag/v1.0.0

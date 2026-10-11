@@ -357,7 +357,7 @@ cd py-workspace-skill
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/pinyin/py-workspace-skill.git
+git remote add origin https://github.com/bf66bf-ai/py-workspace-skill.git
 git push -u origin main
 ```
 

@@ -2,12 +2,12 @@
 
 为服务类创业者设计的 Claude Code 工作区管理系统。**新手友好，全程引导。**
 
-作者：[pinyin](https://github.com/pinyin)
+作者：[bf66bf-ai](https://github.com/bf66bf-ai)
 
 ## 一行安装
 
 ```bash
-cd ~/.claude/skills && git clone https://github.com/pinyin/py-workspace-skill.git py-workspace
+cd ~/.claude/skills && git clone https://github.com/bf66bf-ai/py-workspace-skill.git py-workspace
 ```
 
 **任何 Agent 窗口都可以使用。** 安装后在项目目录输入 `/py-workspace init` 即可开始。
@@ -396,7 +396,7 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ## 联系方式
 
-- GitHub Issues: [提交问题](https://github.com/pinyin/py-workspace-skill/issues)
+- GitHub Issues: [提交问题](https://github.com/bf66bf-ai/py-workspace-skill/issues)
 
 ---
 

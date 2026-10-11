@@ -54,7 +54,7 @@ when_to_use: 用户要求"初始化工作区"、"创建工作区"、"整理工�
 
 ```bash
 cd ~/.claude/skills
-git clone https://github.com/pinyin/py-workspace-skill.git py-workspace
+git clone https://github.com/bf66bf-ai/py-workspace-skill.git py-workspace
 ```
 
 安装后，在任何项目目录调用 `/py-workspace` 即可开始。
